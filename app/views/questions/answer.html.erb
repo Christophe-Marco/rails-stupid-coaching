@@ -1,0 +1,15 @@
+<h1>Stupid Coaching 🚀</h1>
+<p><%= @question %></p>
+<p> --You </p>
+
+<% if @question == "I am going to work" %>
+  <p>Great!.</p>
+<% elsif @question.end_with?("?") %>
+  <p>Silly question, get dressed and go to work!.</p>
+<% else %>
+  <p>I don't care, get dressed and go to work!.</p>
+<% end %>
+
+<p> --Your Coach</p>
+
+<%= link_to "Ask a new question", ask_path %>
